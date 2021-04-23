@@ -1,5 +1,8 @@
-n= int(input("Enter the no to guess : "))
-j= int(input("Max no of attempts to guess no : "))
+import random
+n = random.randint(1,100)
+print("No of Guesses are 6")
+
+j= 6
 
 i= 1
 while(i<=j):
@@ -17,3 +20,6 @@ while(i<=j):
     if (i==j):
         print("No attempt left")
         print("Game over !! you loose")
+        print("Correct answer is ",n)
+    i = i+1
+
